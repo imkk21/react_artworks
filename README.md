@@ -1,73 +1,68 @@
-# React + TypeScript + Vite
+# 🎨 React Artworks Table
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project displays artworks from the **Art Institute of Chicago API** with pagination, row selection, and persistent selections across pages.  
+It was built as part of a React Internship assignment.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
+🔗 [https://react-artworks-yourname.netlify.app](https://react-artworks-yourname.netlify.app)
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🧩 Features
 
-## Expanding the ESLint configuration
+- Fetches artworks dynamically from the public API  
+- Pagination with API calls on every page change (no preloading or caching all pages)  
+- Individual and “Select All” row selection  
+- Selections and deselections persist across pages  
+- “Select N Rows” feature via chevron dropdown  
+- Clean, minimal UI with PrimeReact components  
+- Fully responsive and optimized for smooth performance  
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 🛠️ Tech Stack
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+| Category | Technology |
+|-----------|-------------|
+| Frontend Framework | React 19 (TypeScript + Vite) |
+| UI Components | PrimeReact 9.6.0, PrimeIcons |
+| Styling | Custom CSS + PrimeReact Theme |
+| API Calls | Axios |
+| Deployment | Netlify |
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+## 🧠 Project Highlights
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+- Efficient use of API calls — data is fetched only for the current page.  
+- State management ensures selected rows persist across pagination.  
+- Numeric selector allows selecting a specific number of rows dynamically.  
+- No memory leaks — app doesn’t hold data from all pages.  
+- Built using modern React Hooks and functional components.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+---
+
+## 📜 API Used
+
+**Base URL:**  
+`https://api.artic.edu/api/v1/artworks`
+
+This is a public API provided by the Art Institute of Chicago for open data access.
+
+---
+
+## ▶️ Video Explanation
+
+🎥 [Link to Video Explanation](https://drive.google.com/your-video-link)  
+*(Explains pagination, persistence, and row selection behavior)*
+
+---
+
+## ⚙️ Getting Started
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/imkk21/react_artworks.git
+cd react_artworks
