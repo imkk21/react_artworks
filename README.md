@@ -6,7 +6,7 @@ It was built as part of a React Internship assignment.
 ---
 
 ## 🚀 Live Demo
-🔗 [https://react-artworks-yourname.netlify.app](https://react-artworks-yourname.netlify.app)
+🔗 [https://reactartworks.netlify.app/](https://reactartworks.netlify.app/)
 
 ---
 
@@ -27,7 +27,7 @@ It was built as part of a React Internship assignment.
 | Category | Technology |
 |-----------|-------------|
 | Frontend Framework | React 19 (TypeScript + Vite) |
-| UI Components | PrimeReact 9.6.0, PrimeIcons |
+| UI Components | PrimeReact, PrimeIcons |
 | Styling | Custom CSS + PrimeReact Theme |
 | API Calls | Axios |
 | Deployment | Netlify |
@@ -49,14 +49,7 @@ It was built as part of a React Internship assignment.
 **Base URL:**  
 `https://api.artic.edu/api/v1/artworks`
 
-This is a public API provided by the Art Institute of Chicago for open data access.
-
----
-
-## ▶️ Video Explanation
-
-🎥 [Link to Video Explanation](https://drive.google.com/your-video-link)  
-*(Explains pagination, persistence, and row selection behavior)*
+This is a public API of Art Institute of Chicago for open data access.
 
 ---
 
